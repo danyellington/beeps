@@ -1,0 +1,51 @@
+button {
+  background-image: url("../img/galaxy2.jpeg");
+  background-repeat: repeat;
+  background-position: <left|right>;
+  padding-<left|right>: <width of image>px;
+  width: 68em;  height: 6em;
+  color: lightblue !important;
+  font-size: 15px;
+  position: sticky;
+}
+
+
+.jumbotron {
+    margin-bottom: 0px;
+    background-image: url("../img/robot.png");
+    background-position: 0% 45%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    color: white;
+    text-shadow: black 0.3em 0.3em 0.3em;
+}
+
+
+#boop {
+  float: right;
+}
+
+
+body {
+  background-image: url("../img/computer.jpg");
+  background-size: cover;*
+
+}
+
+.Dave {
+
+}
+
+p {
+  color: white !important;
+}
+
+h1 {
+  color: white;
+}
+
+.panel-default {
+  margin: 15px;
+  width: 1115px;
+  height: 500px;
+}

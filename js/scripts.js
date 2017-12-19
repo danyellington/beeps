@@ -1,12 +1,13 @@
 //Business Logic
 function containOne(number, char){
-  for(var i = 0; i<=number.length; i++){
-    if(number[i]===char){
-      return true;
+    if(number.toString().match(char)){
+      console.log("one");
+      return number;
     }
   }
-  return false;
-}
+
+var search1 = /[1]/;
+var search0 = /[0]/;
 
 function isDivisible(num1, num2){
   num1 = parseInt(num1);
@@ -23,31 +24,35 @@ function isDivisible(num1, num2){
 function beepBoop(number) {
   //debugger;
   var results = [];
-  var dave = "sorry"
+  var dave = "I'm sorry Dave, I'm afraid I can't do that."
   var boop = "boop"
   var beep = "beep"
 
   for(var i = 0; i < number; i++) {
-    if (isDivisible(i, 3)) {
-        results[i] = dave;
+    if (i === 0) {
+      results.push(beep)
     }
-    else if (containOne(i, '1')) {
-      results[i] = boop;
+    else if (containOne(i, search0)) {
+      results.push(beep);
     }
-    else if (containOne(i, '0')) {
-      results[i] = beep;
+    else if (containOne(i, search1)) {
+      results.push(boop);
+    }
+    else if  (isDivisible(i, 3)) {
+      results.push(dave);
     }
     else {
-      results[i] = i;      }
+      results.push(i);
     }
-    return results;
+    }
+    return results.join(", ");
 
   }
 
   //User Interface
 $(document).ready(function() {
   $("form#beepBoop").submit(function(event) {
-    debugger;
+  //  debugger;
     event.preventDefault();
     var input = $("input#input").val();
     var beepBoopString = beepBoop(input);

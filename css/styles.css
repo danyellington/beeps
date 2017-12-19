@@ -1,8 +1,6 @@
 button {
-  background-image: url("../img/galaxy2.jpeg");
+  background-image: url("../img/galaxy2.jpg");
   background-repeat: repeat;
-  /*background-position: <left|right>;
-  padding-<left|right>: <width of image>px;*/
   width: 100%;  height: 6em;
   color: lightblue !important;
   font-size: 15px;
@@ -37,7 +35,8 @@ body {
 }
 
 .results {
-  color: black !important;
+  color: white !important;
+  font-size: 32px;
 }
 
 h1 {

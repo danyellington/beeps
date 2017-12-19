@@ -22,7 +22,6 @@ function isDivisible(num1, num2){
 
 
 function beepBoop(number) {
-  //debugger;
   var results = [];
   var dave = "I'm sorry Dave, I'm afraid I can't do that."
   var boop = "boop"
@@ -52,7 +51,6 @@ function beepBoop(number) {
   //User Interface
 $(document).ready(function() {
   $("form#beepBoop").submit(function(event) {
-  //  debugger;
     event.preventDefault();
     var input = $("input#input").val();
     var beepBoopString = beepBoop(input);

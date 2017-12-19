@@ -24,18 +24,17 @@ The program identifies numbers divisible by three
 The program divides divisible numbers by three
 
 Any numbers divisible by three = "I'm sorry, Dave. I'm afraid I can't do that."
-  (ex: input: 30 output: "I'm sorry, Dave. I'm afraid I can't do that.")
+  (ex: input: 3 output: "1, 2, I'm sorry, Dave. I'm afraid I can't do that.")
 
-identifies "0" in a number not divisible by three and replaces number with word "beep"
-  (ex: input: 320 output: "beep")
+identifies "0" in a number and replaces number with word "beep"
+  (ex: input: 0 output: "beep")
 
-identifies "1" in a number not divisible by three and replaces number with word "boop"
-  (ex: input: 341 output: "boop")
+identifies "1" in a number and replaces number with word "boop"
+  (ex: input: 1 output: "boop")
 
-identifies numbers not divisible by three with both "0" and "1"
+identifies numbers not divisible by three nor containing "1" or "0" and returns nummber
+  (ex: input: 2 output: "2")
 
-Numbers not divisible by three containing both ones and zeroes in any quantity and order = "beep boop"
-  (ex: input: 51,001 output: "beep boop")
 
 
 

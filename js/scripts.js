@@ -23,7 +23,7 @@ function isDivisible(num1, num2){
 
 function beepBoop(number) {
   var results = [];
-  var dave = "I'm sorry Dave, I'm afraid I can't do that."
+  var dave = "I'm sorry, Dave. I'm afraid I can't do that."
   var boop = "boop"
   var beep = "beep"
 
@@ -44,7 +44,7 @@ function beepBoop(number) {
     return results.join(", ");
 
   }
-  
+
 
   //User Interface
 $(document).ready(function() {

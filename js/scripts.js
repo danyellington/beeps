@@ -44,6 +44,7 @@ function beepBoop(number) {
     return results.join(", ");
 
   }
+  
 
   //User Interface
 $(document).ready(function() {

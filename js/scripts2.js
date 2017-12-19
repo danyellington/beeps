@@ -7,14 +7,14 @@ var beep = "beep"
 
 function findNumber(number){
   for(var i = 0; i <= number; i++) {
-
-  if((i === 0) || (i.toString().match(/[0]/))){
+    
+  if ((i % 3 === 0) && (i != 0)){
+      results.push(dave);
+    }else if ((i === 0) || (i.toString().match(/[0]/))){
       results.push(beep);
-  }else if(i % 3 === 0){
-    results.push(dave);
-  }else if((i == 1) || (i.toString().match(/[1]/))){
+    }else if ((i === 1) || (i.toString().match(/[1]/))){
     results.push(boop);
-  }else{
+    }else{
     results.push(i);
   }
 }

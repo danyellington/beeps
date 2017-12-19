@@ -1,11 +1,4 @@
 //Business Logic
-function containOne(number, char){
-    if(number.toString().match(char)){
-      console.log("one");
-      return number;
-    }
-  }
-
 var search1 = /[1]/;
 var search0 = /[0]/;
 
@@ -27,12 +20,9 @@ function beepBoop(number) {
   var boop = "boop"
   var beep = "beep"
 
-  for(var i = 0; i < number; i++) {
+  for(var i = 1; i <= number; i++) {
     if (i === 0) {
       results.push(beep)
-    }
-    else if (containOne(i, search0)) {
-      results.push(beep);
     }
     else if (containOne(i, search1)) {
       results.push(boop);
